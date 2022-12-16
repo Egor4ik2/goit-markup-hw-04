@@ -8,6 +8,7 @@
     --color-of-card: #F4F4FD;
     --main-color-focus:#4D5AE5;
     --button-h-one-focus:#404BBF;
+    --color-border:#8E8F99;
 
 }
 
@@ -50,8 +51,7 @@ p
 .list
 {
     padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin:0;
     list-style: none;
 } 
 
@@ -386,14 +386,94 @@ p
     margin-bottom: 8px;
 }
 
-/* footer */
 
 
-.footer-p
+
+/* Customers */
+
+.section-customers
 {
-   width: 264px; 
-   margin-top: 16px;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
+
+.customers-h-one
+{
+    margin:0;
+    margin-bottom: 72px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.customers
+{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+
+.customers-item
+{
+    width: 168px;
+    height: 88px;
+    border:1px solid#8E8F99;
+    border-radius: 4px;
+    fill:#8e8f99;
+}
+
+.customers-item:hover, .customers-item:focus
+{
+    border-color: #4D5AE5;
+    fill: #4D5AE5;
+}
+
+
+/* footer */
+.p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.footer-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-list li + li {
+    margin-left: 16px;
+}
+.footer ul {
+    display: flex;
+}
+.footer div {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
+.footer-div
+{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+
 .footer
 {
     padding-bottom: 100px;
@@ -414,25 +494,30 @@ p
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-
-/* Customers */
-
-.customers
-{
-    margin:0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 
 
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color:#31D0AA;
+}
+
+.footer-list li + li {
+    margin-left: 16px;
+}
 
 /* Portfolio design */
 
@@ -484,6 +569,8 @@ p
 {
     color:var(--main-color-white);
     background: var(--main-color-blue); 
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
