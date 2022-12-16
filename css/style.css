@@ -167,10 +167,12 @@ p
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
-    background-image: url(../image/people/people-ofice.jpg);  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../image/people/people-ofice.jpg);
 }
 
 .section-title
@@ -226,12 +228,23 @@ p
 
 /* section 2 */
 
+.icon {
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    background-position: center;
+}
+
+
+
+
 .recomends
 {
     display: flex;
 }
 
-.recomends li:not(:first-child)
+.recomends>li:not(:first-child)
 {
     margin-left: 24px;
 }
@@ -270,6 +283,28 @@ p
     text-align: left;  
 }
 /* section 3 */
+
+.icon-father-team
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+    margin-bottom: 32px;
+    gap: 24px;
+
+    height: 48px;
+}
+.icon-team
+{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: var(--main-color-blue)
+}
+
+
 .section
 {
     padding-bottom: 120px;
@@ -298,11 +333,7 @@ p
     letter-spacing: 0.02em;
 }
 
-.we
-{
-    /* margin-top: 120px;
-    margin-bottom: 72px; */
-}
+
 
 .img
 {
@@ -338,7 +369,7 @@ p
     letter-spacing: 0.02em;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
 }
 
 
@@ -383,6 +414,21 @@ p
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+
+/* Customers */
+
+.customers
+{
+    margin:0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 
